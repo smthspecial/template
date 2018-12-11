@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass src/scss -o dist/css -w",
-    "babel": "babel src/js -d dist/js -w",
-    "postcss": "postcss -u autoprefixer postcss-cssnext -r dist/css/*.css -w",
+    "scss": "node-sass src/scss -o public/css -w",
+    "babel": "babel src/js -d public/js -w",
+    "postcss": "postcss -u autoprefixer postcss-cssnext -r public/css/*.css -w",
     "css": "npm-run-all -s scss postcss",
-    "imagemin": "imagemin src/img/* --out-dir=dist/img -w",
-    "serve": "browser-sync dist/ -w",
+    "imagemin": "imagemin src/img/* --out-dir=public/img -w",
+    "serve": "browser-sync public/ -w",
+    "test-for-qualyti": "lighthouse http://127.0.0.1 ",
     "all": " npm-run-all -p css babel imagemin serve "
   },
   "author": "",
@@ -22,15 +23,21 @@
     "browser-sync": "^2.26.3",
     "chokidar-cli": "^1.2.1",
     "gulp": "^4.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1",
     "imagemin-cli": "^4.0.0",
+    "lighthouse": "^4.0.0-alpha.2-3.2.1",
     "node-sass": "^4.11.0",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^6.0.1",
-    "postcss-cssnext": "^3.1.0"
+    "postcss-cssnext": "^3.1.0",
+    "webpack": "^4.27.1"
   },
   "babel": {
     "presets": [
       "es2015"
     ]
-  }
+  },
+  "dependencies": {}
 }
