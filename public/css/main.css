@@ -1,5 +1,8 @@
 h1 {
-  color: blue; }
+  color: black; }
 
 body {
-  background-color: red; }
+  background-color: #fff;
+  display: block; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uc2NzcyIsIl92YXIuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLGFDSFMsRURJWjs7QUFFRDtFQUNJLHVCQUFzQjtFQUN0QixlQUFjLEVBRWpCIiwiZmlsZSI6Im1haW4uY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCBcIl92YXJcIjtcclxuXHJcbmgxIHtcclxuICAgIGNvbG9yOiAkY29sb3I7XHJcbn1cclxuXHJcbmJvZHkge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgLy8gdHJhbnNmb3JtOiB0cmFuc2xhdGUoNTAlKTtcclxufVxyXG5cclxuIiwiJGNvbG9yOiBibGFjazsiXX0= */
